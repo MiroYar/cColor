@@ -1,0 +1,23 @@
+{
+  "name": "ccolor",
+  "version": "1.0.0",
+  "description": "Utility for console text color.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiroYar/cColor.git"
+  },
+  "keywords": [
+    "console",
+    "color"
+  ],
+  "author": "Artem Shutov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MiroYar/cColor/issues"
+  },
+  "homepage": "https://github.com/MiroYar/cColor#readme"
+}
