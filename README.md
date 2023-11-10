@@ -1,2 +1,3 @@
 # cColor
- Console Color util.
+
+Utility for console text color.
