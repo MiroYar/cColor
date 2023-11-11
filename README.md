@@ -8,26 +8,26 @@ Utility for console text color. Based on [3-bit, 4-bit color chart](https://en.w
 
 ---
 
-> **Method:** cColor
-> **Type:**
->
-> ```typescript
-> (text: string, initial: StringColorInitial | ObjectColorInitial) => string;
-> ```
+**Method:** cColor
+**Type:**
 
-> **Type:** StringColorInitial
-> **Description:** Has a value from the [table](#table) of color full initials.
+```typescript
+(text: string, initial: StringColorInitial | ObjectColorInitial) => string;
+```
 
-> **Type:** ObjectColorInitial
->
-> ```typescript
-> {
->  F?: ColorInitials;
->  B?: ColorInitials;
-> }
-> ```
->
-> **Description:** An object consisting of two keys F and B, denoting the position of the Foreground and Background colors and having a value from the color initials [table](#table).
+**Type:** StringColorInitial
+**Description:** Has a value from the [table](#table) of color full initials.
+
+**Type:** ObjectColorInitial
+
+```typescript
+{
+  F?: ColorInitials;
+  B?: ColorInitials;
+}
+```
+
+**Description:** An object consisting of two keys F and B, denoting the position of the Foreground and Background colors and having a value from the color initials [table](#table).
 
 **<a name="table">Table:</a>** Color initials you can see in:
 
