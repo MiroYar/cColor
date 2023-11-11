@@ -31,7 +31,7 @@ Utility for console text color. Based on [3-bit, 4-bit color chart](https://en.w
 
 **Description:** An object consisting of two keys F and B, denoting the position of the Foreground and Background colors and having a value from the color initials [table](#table).
 
-**<a name="table">Table:</a>** Color initials you can see in:
+**<a name="table"></a>Table:** Color initials you can see in:
 
 | Color               | Foreground | Background |
 | ------------------- | :--------: | ---------- |
