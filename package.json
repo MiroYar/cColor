@@ -1,10 +1,14 @@
 {
   "name": "ccolor",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Utility for console text color.",
   "main": "index.js",
+  "type": "module",
+  "files": [
+    "*.d.ts"
+  ],
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "test": "node cColor.js"
   },
   "repository": {
     "type": "git",
