@@ -59,6 +59,6 @@ Utility for console text color. Based on [3-bit, 4-bit color chart](https://en.w
 import cColor from 'ccolor';
 
 cColor('Some text', 'FY');
-cColor('Some text', 'BM');
+cColor('Some text', 'BBM');
 cColor('Some text', { F: 'Y', B: 'BM' });
 ```
