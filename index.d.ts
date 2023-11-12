@@ -1,1 +1,1 @@
-export { default as cColor } from './cColor';
+export { cColor } from './cColor';

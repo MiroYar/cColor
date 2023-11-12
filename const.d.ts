@@ -1,1 +1,1 @@
-export declare const colorInitials = ['D', 'R', 'G', 'Y', 'B', 'M', 'C', 'W'] as const;
+export type colorInitials = ['D', 'R', 'G', 'Y', 'B', 'M', 'C', 'W'];

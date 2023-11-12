@@ -8,5 +8,4 @@ type StringColorInitial = `${ColorPosition}${ColorInitials}`;
 type ObjectColorInitial = {
   [key in ColorPosition]?: ColorInitials;
 };
-type cColor = (text: string, initial: StringColorInitial | ObjectColorInitial) => string;
-export default cColor;
+export type cColor = (text: string, initial: StringColorInitial | ObjectColorInitial) => string;

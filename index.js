@@ -1,1 +1,1 @@
-export { default as cColor } from './cColor.js';
+export { cColor } from './cColor.js';

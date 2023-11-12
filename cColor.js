@@ -1,6 +1,6 @@
-import { colorInitials } from './const';
+import { colorInitials } from './const.js';
 
-const cColor = function cColor(text, initial) {
+export const cColor = function cColor(text, initial) {
   const n1 = { 2: 3, 3: 9 };
   const n2 = colorInitials;
 
@@ -23,5 +23,3 @@ const cColor = function cColor(text, initial) {
 
   return nums.length ? _code(nums, text) : text;
 };
-
-export default cColor;
