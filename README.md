@@ -8,7 +8,7 @@ Utility for console text color. Based on [3-bit, 4-bit color chart](https://en.w
 
 ---
 
-**Method:** <u>cColor</u>
+**Method:** cColor
 \
 **Type:**
 
@@ -16,11 +16,11 @@ Utility for console text color. Based on [3-bit, 4-bit color chart](https://en.w
 (text: string, initial: StringColorInitial | ObjectColorInitial) => string;
 ```
 
-**Type:** <u>StringColorInitial</u>
+**Type:** StringColorInitial
 \
 **Description:** Has a value from the [table](#table) of color full initials.
 
-**Type:** <u>ObjectColorInitial</u>
+**Type:** ObjectColorInitial
 
 ```typescript
 {
