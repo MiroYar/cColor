@@ -1,4 +1,4 @@
-# cColor
+# cColor [pre-alpha(!)]
 
 ---
 

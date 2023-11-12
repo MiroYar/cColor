@@ -4,9 +4,6 @@
   "description": "Utility for console text color.",
   "main": "index.js",
   "type": "module",
-  "files": [
-    "*.d.ts"
-  ],
   "scripts": {
     "test": "node cColor.js"
   },
