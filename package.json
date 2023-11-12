@@ -1,6 +1,6 @@
 {
   "name": "@miroyar/ccolor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Utility for console text color.",
   "main": "index.js",
   "types": "./index.d.ts",
