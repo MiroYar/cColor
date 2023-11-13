@@ -1,1 +1,1 @@
-export type colorInitials = ['D', 'R', 'G', 'Y', 'B', 'M', 'C', 'W'];
+export declare type colorInitials = ['D', 'R', 'G', 'Y', 'B', 'M', 'C', 'W'];
