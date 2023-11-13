@@ -1,5 +1,7 @@
 import { cColor } from '../index.js';
 
-console.log(cColor('Some text', 'FM'));
-console.log(cColor('Some text', 'BBM'));
-console.log(cColor('Some text', { F: 'Y', B: 'C' }));
+const text = 'The SGR parameters 30–37 selected the foreground color, while 40–47 selected the background.';
+
+console.log(cColor(text, 'FB'));
+console.log(cColor(text, 'BBG'));
+console.log(cColor(text, { F: 'B', B: 'BG' }));
