@@ -56,11 +56,13 @@ Utility for console text color. Based on [3-bit, 4-bit color chart](https://en.w
 **Example:**
 
 ```typescript
-import cColor from 'ccolor';
+import { CColor } from '@miroyar/ccolor';
 
 const text = 'The SGR parameters 30–37 selected the foreground color, while 40–47 selected the background.';
 
-console.log(cColor(text, 'FB'));
-console.log(cColor(text, 'BBG'));
-console.log(cColor(text, { F: 'B', B: 'BG' }));
+const cColor = new CColor();
+
+console.log(cColor.print(text, 'FB'));
+console.log(cColor.print(text, 'BBG'));
+console.log(cColor.print(text, { F: 'B', B: 'BG' }));
 ```

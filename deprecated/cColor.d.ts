@@ -1,7 +1,7 @@
-import { colorInitials } from './const';
+import { colorInitials } from '../src/const';
 
 type ColorPosition = 'F' | 'B';
-type ColorBaseInitials = colorInitials[number];
+type ColorBaseInitials = (typeof colorInitials)[number];
 type ColorBrightInitials = `B${ColorBaseInitials}`;
 type ColorInitials = ColorBaseInitials | ColorBrightInitials;
 type StringColorInitial = `${ColorPosition}${ColorInitials}`;

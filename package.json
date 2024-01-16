@@ -2,12 +2,25 @@
   "name": "@miroyar/ccolor",
   "version": "0.1.4",
   "description": "Utility for console text color.",
-  "type": "module",
-  "main": "index.js",
-  "module": "index.js",
-  "types": "index.d.ts",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
-    "test": "node test/test"
+    "test": "node test/test.ts",
+    "clean": "rm -fr dist/*",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs && npm run build:types",
+    "rename:mjs": "for file in dist/*.js; do mv \"$file\" \"${file%.js}.mjs\"; done",
+    "build:esm": "tsc -p tsconfig.esm.json && npm run rename:mjs",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:types": "tsc -p tsconfig.types.json"
   },
   "repository": {
     "type": "git",

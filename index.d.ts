@@ -1,1 +1,0 @@
-export { cColor } from './cColor';

@@ -1,0 +1,10 @@
+v1.0.0
+For package users:
+- Support for CommonJS modules has been added;
+- The cColor function has been converted to a class containing the .print method.
+For package developers:
+- Added separation of files into source (/src) and redistributable (/dist);
+- The source files were written in TypeScript, the previous files were moved to the /deprecated folder;
+- More detailed typing has been implemented;
+- Added scripts to package.json for compiling redistributable package files from source:
+- Changed .npmignore.

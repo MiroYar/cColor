@@ -1,4 +1,4 @@
-import { colorInitials } from './const.js';
+import { colorInitials } from '../const.js';
 
 export const cColor = function cColor(text, initial) {
   const n1 = { 2: 3, 3: 9 };
