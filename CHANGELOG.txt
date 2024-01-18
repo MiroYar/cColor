@@ -1,3 +1,10 @@
+v1.0.2
+For package users:
+- Fixed support for CommonJS modules.
+For package developers:
+- Fixed script to create package.json in the /cjs directories;
+- Removed links on types from main package.json.
+
 v1.0.1
 For package users:
 - Fixed support for CommonJS and ES modules.
