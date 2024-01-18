@@ -1,4 +1,4 @@
-import { colorInitials, brightnessIndex } from './const';
+import { colorInitials, brightnessIndex } from './const.js';
 export class CColor {
     #n1 = brightnessIndex;
     #n2 = colorInitials;

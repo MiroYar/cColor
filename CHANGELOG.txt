@@ -1,6 +1,14 @@
+v1.0.1
+For package users:
+- Fixed support for CommonJS and ES modules.
+For package developers:
+- CommonJS and ES modules have been moved to the /cjs and /esm directories;
+- Added scripts to create the necessary index.d.ts and package.json in each of the /cjs and /esm directories;
+- Removed the script renaming ESM file extensions to *.mjs.
+
 v1.0.0
 For package users:
-- Support for CommonJS modules has been added;
+- Support for CommonJS and ES modules has been added;
 - The cColor function has been converted to a class containing the .print method.
 For package developers:
 - Added separation of files into source (/src) and redistributable (/dist);

@@ -7,11 +7,11 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 var _CColor_n1, _CColor_n2, _CColor_num, _CColor_code;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CColor = void 0;
-const const_1 = require("./const");
+const const_js_1 = require("./const.js");
 class CColor {
     constructor() {
-        _CColor_n1.set(this, const_1.brightnessIndex);
-        _CColor_n2.set(this, const_1.colorInitials);
+        _CColor_n1.set(this, const_js_1.brightnessIndex);
+        _CColor_n2.set(this, const_js_1.colorInitials);
         //@ts-ignore
         _CColor_num.set(this, (i) => `${__classPrivateFieldGet(this, _CColor_n1, "f")[Number(i.length)] + Number(i[0] === 'B')}${__classPrivateFieldGet(this, _CColor_n2, "f").indexOf(i.at(-1))}`);
         _CColor_code.set(this, (n, t) => `\x1b[${n.join(';')}m${t}\x1b[0m`);

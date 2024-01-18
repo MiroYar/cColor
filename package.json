@@ -2,24 +2,25 @@
   "name": "@miroyar/ccolor",
   "version": "1.0.0",
   "description": "Utility for console text color.",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.mjs",
   "types": "./dist/index.d.ts",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "default": "./dist/index.js"
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.mjs",
+      "default": "./dist/cjs/index.js"
     }
   },
   "scripts": {
     "test": "node test/test.ts",
     "clean": "rm -fr dist/*",
-    "build": "npm run clean && npm run build:esm && npm run build:cjs && npm run build:types",
-    "rename:mjs": "for file in dist/*.js; do mv \"$file\" \"${file%.js}.mjs\"; done",
-    "build:esm": "tsc -p tsconfig.esm.json && npm run rename:mjs",
-    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs && tsc -p tsconfig.types.json",
+    "files:esm": "echo 'export * from \"..\";' > dist/esm/index.d.ts && echo '{ \"type\": \"module\" }' > dist/esm/package.json",
+    "files:cjs": "echo 'export * from \"..\";' > dist/cjs/index.d.ts && echo '{ \"type\": \"module\" }' > dist/cjs/package.json",
+    "build:esm": "tsc -p tsconfig.esm.json && npm run files:esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json && npm run files:cjs",
     "build:types": "tsc -p tsconfig.types.json"
   },
   "repository": {

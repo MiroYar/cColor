@@ -1,1 +1,1 @@
-export { CColor } from './CColor';
+export { CColor } from './CColor.js';

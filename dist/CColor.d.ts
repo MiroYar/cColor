@@ -1,4 +1,4 @@
-import { colorInitials } from './const';
+import { colorInitials } from './const.js';
 type ColorPosition = 'F' | 'B';
 type ColorBaseInitials = (typeof colorInitials)[number];
 type ColorBrightInitials = `B${ColorBaseInitials}`;
