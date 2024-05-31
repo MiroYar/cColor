@@ -8,6 +8,7 @@
     ".": {
       "require": "./dist/cjs/index.js",
       "import": "./dist/esm/index.js",
+      "types": "./dist/types/index.d.ts",
       "default": "./dist/cjs/index.js"
     }
   },
@@ -15,10 +16,10 @@
     "test": "node test/test.ts",
     "clean": "rm -fr dist/*",
     "build": "npm run clean && npm run build:esm && npm run build:cjs && tsc -p tsconfig.types.json",
-    "files:esm": "echo 'export * from \"..\";' > dist/esm/index.d.ts && echo '{ \"type\": \"module\" }' > dist/esm/package.json",
-    "files:cjs": "echo 'export * from \"..\";' > dist/cjs/index.d.ts && echo '{ \"type\": \"commonjs\" }' > dist/cjs/package.json",
-    "build:esm": "tsc -p tsconfig.esm.json && npm run files:esm",
-    "build:cjs": "tsc -p tsconfig.cjs.json && npm run files:cjs",
+    "json:esm": "echo '{ \"type\": \"module\" }' > dist/esm/package.json",
+    "json:cjs": "echo '{ \"type\": \"commonjs\" }' > dist/cjs/package.json",
+    "build:esm": "tsc -p tsconfig.esm.json && npm run json:esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json && npm run json:cjs",
     "build:types": "tsc -p tsconfig.types.json"
   },
   "repository": {
