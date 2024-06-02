@@ -20,7 +20,12 @@
     "json:cjs": "echo '{ \"type\": \"commonjs\" }' > dist/cjs/package.json",
     "build:esm": "tsc -p tsconfig.esm.json && npm run json:esm",
     "build:cjs": "tsc -p tsconfig.cjs.json && npm run json:cjs",
-    "build:types": "tsc -p tsconfig.types.json"
+    "build:types": "tsc -p tsconfig.types.json",
+    "preversion": "git checkout main && git pull && npm install && npm run build",
+    "release:major": "npm version major",
+    "release:minor": "npm version minor",
+    "release:patch": "npm version patch",
+    "postversion": "git push origin && npm publish --access public"
   },
   "repository": {
     "type": "git",
