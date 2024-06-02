@@ -1,3 +1,6 @@
+v1.0.4
+For package developers:
+- Fixed types link
 v1.0.3
 For package developers:
 - Fixed the .npmignore directories
