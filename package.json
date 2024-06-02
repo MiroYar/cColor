@@ -1,6 +1,6 @@
 {
   "name": "@miroyar/ccolor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utility for console text color.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
