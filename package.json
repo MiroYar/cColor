@@ -4,6 +4,7 @@
   "description": "Utility for console text color.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/cjs/index.js",
