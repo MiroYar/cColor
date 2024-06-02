@@ -1,3 +1,8 @@
+v1.0.3
+For package developers:
+- Fixed the .npmignore directories
+- Removed .DS_Store from repository
+- Fixed types
 v1.0.2
 For package users:
 - Fixed support for CommonJS modules.
